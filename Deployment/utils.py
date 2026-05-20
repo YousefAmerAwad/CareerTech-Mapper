@@ -3,12 +3,12 @@ import pickle
 import os
 
 #Change working directory
-os.chdir(r"F:\Project\CareerTech_Mapper\Deployment")
+#os.chdir(r"F:\Project\CareerTech_Mapper\Deployment")
 
 
 # Load features and targets
-X = pd.read_pickle('..\Data/processed_data/X_features.pkl')
-y = pd.read_pickle('..\Data/processed_data/y_target.pkl')
+X = pd.read_pickle('model/X_features.pkl')
+y = pd.read_pickle('model/y_target.pkl')
 
 # Load feature and target column names
 feature_names = X.columns.to_list()
