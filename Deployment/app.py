@@ -5,17 +5,15 @@ from utils import suggest_careers, suggest_more_skills, feature_names, target_na
 app = Flask(__name__)
 
 
-# ---------------------------
-# Home route (test server)
-# ---------------------------
+
+# Home route 
 @app.route('/')
 def home():
     return render_template("index.html",skills=feature_names, careers=target_names)
 
 
-# ---------------------------
+
 # Predict careers from skills
-# ---------------------------
 @app.route('/predict-careers', methods=['POST'])
 def predict_careers():
 
@@ -30,9 +28,7 @@ def predict_careers():
     })
 
 
-# ---------------------------
 # Suggest more skills
-# ---------------------------
 @app.route('/recommend-skills', methods=['POST'])
 def recommend_skills():
 
@@ -49,8 +45,6 @@ def recommend_skills():
     })
 
 
-# ---------------------------
 # Run server
-# ---------------------------
 if __name__ == '__main__':
-    app.run(debug=True, port=5000)
+    app.run(host="0.0.0.0")
