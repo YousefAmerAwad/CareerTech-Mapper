@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CareerTech Mapper</title>
+</head>
+
+<body style="font-family: Arial; margin: 40px;">
+
+    <h1 style="font-size:3rem; text-align: center;"> CareerTech Mapper</h1>
+    <h1> 1- Predict Suitable Careers  </h1>
+
+    <h2>Select Your Skills</h2>
+
+    <select id="skillsInput" multiple style="width:300px; height:600px;">
+        {% for skill in skills %}
+            <option value="{{ skill }}">{{ skill }}</option>
+        {% endfor %}
+    </select>
+
+    <br><br>
+
+    
+    <button onclick="predictCareers()">Predict Careers</button>
+    
+    <h3>Results:</h3>
+    <pre id="output"></pre>
+
+    <script>
+        async function predictCareers() {
+            
+            let select = document.getElementById("skillsInput");
+
+            let skills = Array.from(select.selectedOptions).map(option => option.value);
+
+            let response = await fetch("/predict-careers", {
+                method: "POST",
+                headers: {"Content-Type": "application/json"},
+                body: JSON.stringify({skills: skills})
+            });
+
+            let data = await response.json();
+
+            document.getElementById("output").innerText = JSON.stringify(data, null, 1);
+        }
+    </script>
+    
+
+
+
+
+
+    <h1 style="margin-top:100px;">2- Suggest More Skills</h1>
+    <h2> Select One Career</h2>
+    <select id="careerInput"> 
+        {% for career in careers %}
+            <option value="{{ career }}">{{ career }}</option>
+
+        {% endfor %}
+    </select>
+
+    <button onclick="suggestSkills()">Suggest Skills</button>
+    <h3>Results:</h3>
+    <pre id="output2"></pre>
+
+    <script>
+        async function suggestSkills() {
+
+            let career = document.getElementById("careerInput").value
+            let skillsSelect = document.getElementById("skillsInput");
+            let skills = Array.from(skillsSelect.selectedOptions).map(option => option.value);
+
+            let response = await fetch("/recommend-skills", {
+                method : "POST",
+                headers: {"Content-Type": "application/json"},
+                body: JSON.stringify({skills: skills, career:career})
+
+
+            });
+            let data = await response.json();
+            document.getElementById("output2").innerText = JSON.stringify(data, null, 1);
+
+        }
+    </script>
+
+
+</body>
+</html>
