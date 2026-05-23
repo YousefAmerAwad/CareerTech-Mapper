@@ -130,10 +130,12 @@ Let’s see what the system recommends.<br>
 
 Screenshot: <br>
 <img width="400" height="450" alt="image" src="https://github.com/user-attachments/assets/0848a8e3-bc25-4fef-87b6-c6848c24d1be" /> <br>
-The system successfully recognizes the user’s focus on UI and front-end development and suggests additional technologies that expand frontend development capabilities
+The system successfully recognizes the user’s focus on UI and front-end development and suggests additional technologies that expand frontend development capabilities. <br>
+<br>
 
 
+##  Live Demo
 
-
+<https://youssefamirawad.pythonanywhere.com/>
 
 
