@@ -90,8 +90,50 @@ The system analyzes the input skills and correctly predicts the most relevant ca
 
 Now, suppose the user selects “**Data scientist or machine learning specialist**” and wants to know the additional skills required for this career. Let’s see what the system suggests.<br>
 
-**Screenshot**:<br>
+Screenshot:<br>
 <img width="450" height="400" alt="image" src="https://github.com/user-attachments/assets/9f754444-072c-4f45-a636-f34363fa22be" /> <br>
-The system successfully identifies relevant career paths from basic data skills and recommends industry-relevant skills needed to reach that career
+The system successfully identifies relevant career paths from basic data skills and recommends industry-relevant skills needed to reach that career 
+<br>
+
+---
+
+### Scinario 2 :
+Suppose a computer engineering student has mainly studied academic and low-level programming technologies during university courses and currently possesses the following skills: [**Assembly**, **C**, **Java**, **MongoDB**, **MySQL**, **SQL**] <br>
+The student wants to explore which career paths best match this background and uses our system for guidance. <br>
+Let’s see what the system suggests <br>
+
+Screenshot: <br>
+<img width="395" height="870" alt="image" src="https://github.com/user-attachments/assets/2972dfc1-8d5d-463f-8725-a973be955e9e" /> <br>
+The results reflect the student’s strong foundation in systems programming, databases, and backend-related technologies. <br>
+
+Now, suppose the student is interested in becoming a **Mobile Application Developer** and wants to know which additional skills should be learned to transition into this field. <br>
+Let’s see what the system recommends. <br>
+
+Screenshot: <br>
+<img width="400" height="450" alt="image" src="https://github.com/user-attachments/assets/1f1fc3e4-07bc-4f94-9514-eac83c5dd60d" /> <br>
+The system successfully recognizes the student’s foundation in backend and systems-related technologies and recommends modern mobile development technologies required for transitioning into mobile application development <br>
+
+---
+
+### Scinario 3 :
+
+Suppose a user is interested in web development and currently possesses the following frontend-related skills: [**HTML/CSS**, **JavaScript**, **React.js**] <br>
+The user wants to discover which IT career paths best match these skills and uses the system for guidance. <br>
+Let’s see what the system suggests. <br>
+
+Screenshot: <br>
+<img width="380" height="841" alt="image" src="https://github.com/user-attachments/assets/b3a6d178-3a1f-437b-ad36-67c8bbc74e7c" /> <br>
+The results correctly reflect the user's strong frontend development background and UI-oriented technologies. <br>
+
+Now, suppose the user wants to become a **Front-End Developer** and is looking for additional skills that could improve their profile. <br>
+Let’s see what the system recommends.<br>
+
+Screenshot: <br>
+<img width="400" height="450" alt="image" src="https://github.com/user-attachments/assets/0848a8e3-bc25-4fef-87b6-c6848c24d1be" /> <br>
+The system successfully recognizes the user’s focus on UI and front-end development and suggests additional technologies that expand frontend development capabilities
+
+
+
+
 
 
